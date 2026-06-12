@@ -114,7 +114,7 @@ Add checks for ambiguous SuiteScript version annotations and 2.1-only module usa
 - [x] Implemented
 - [x] Conformance reviewed
 - [x] Adversarially reviewed
-- [ ] PR opened
+- [x] PR opened
 - [ ] Merged
 
 ## M3: Syntax Compatibility Rule
