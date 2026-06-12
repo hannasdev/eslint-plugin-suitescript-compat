@@ -170,7 +170,7 @@ Add conservative SuiteScript 2.0 syntax compatibility checks.
 - [x] Implemented
 - [x] Conformance reviewed
 - [x] Adversarially reviewed
-- [ ] PR opened
+- [x] PR opened
 - [ ] Merged
 
 ## M4: Config Presets And Usage Documentation
