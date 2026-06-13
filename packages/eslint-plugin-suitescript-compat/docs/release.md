@@ -23,7 +23,8 @@ Version increments follow conventional commits:
 
 - `fix:` and non-feature changes create a patch release.
 - `feat:` creates a minor release.
-- `feat!:`, `fix!:`, or `BREAKING CHANGE` creates a major release.
+- `feat!:`, `fix!:`, `BREAKING CHANGE:`, or `BREAKING-CHANGE:` creates a
+  major release.
 
 ## One-Time npm Setup
 

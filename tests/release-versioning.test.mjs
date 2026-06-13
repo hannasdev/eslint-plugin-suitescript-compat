@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 
 import { compareSemver, determineIncrement } from "../scripts/release-versioning.mjs";
+
+const scriptPath = fileURLToPath(new URL("../scripts/release-versioning.mjs", import.meta.url));
 
 test("detects breaking changes as major releases", () => {
   assert.equal(determineIncrement("feat!: remove legacy option"), "major");
@@ -26,4 +30,13 @@ test("compares SemVer releases and prereleases", () => {
   assert.equal(compareSemver("0.1.0-alpha.0", "0.1.0"), -1);
   assert.equal(compareSemver("1.0.0", "0.9.9"), 1);
   assert.equal(compareSemver("1.0.0", "1.0.0"), 0);
+});
+
+test("prints usage when assert-not-behind args are missing", () => {
+  const result = spawnSync(process.execPath, [scriptPath, "assert-not-behind"], {
+    encoding: "utf8"
+  });
+
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /Usage: release-versioning\.mjs increment \| assert-not-behind <package-version> <tag-version>/);
 });

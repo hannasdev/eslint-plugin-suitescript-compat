@@ -63,6 +63,10 @@ async function readStdin() {
   return input;
 }
 
+function printUsage() {
+  console.error("Usage: release-versioning.mjs increment | assert-not-behind <package-version> <tag-version>");
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const command = process.argv[2];
 
@@ -70,6 +74,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.stdout.write(`${determineIncrement(await readStdin())}\n`);
   } else if (command === "assert-not-behind") {
     const [packageVersion, tagVersion] = process.argv.slice(3);
+    if (!packageVersion || !tagVersion) {
+      printUsage();
+      process.exit(1);
+    }
+
     const comparison = compareSemver(packageVersion, tagVersion);
     if (comparison < 0) {
       console.error(`package.json version ${packageVersion} is behind latest tag ${tagVersion}.`);
@@ -78,7 +87,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       process.exit(1);
     }
   } else {
-    console.error("Usage: release-versioning.mjs increment | assert-not-behind <package-version> <tag-version>");
+    printUsage();
     process.exit(1);
   }
 }

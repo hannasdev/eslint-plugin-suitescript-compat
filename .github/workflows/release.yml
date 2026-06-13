@@ -1,7 +1,7 @@
 # Automatically creates a release when a PR is merged to main.
 #
 # Version increment is inferred from conventional commit messages since the last tag:
-#   - "BREAKING CHANGE" or "!" before ":" -> major
+#   - "BREAKING CHANGE:", "BREAKING-CHANGE:", or "!" before ":" -> major
 #   - "feat:" prefix -> minor
 #   - Everything else -> patch
 #
