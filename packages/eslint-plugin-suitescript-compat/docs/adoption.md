@@ -12,10 +12,12 @@ Until a release decision changes package distribution, evaluate the plugin from 
 local checkout in a project that also installs ESLint 9:
 
 ```sh
-npm install --save-dev eslint /path/to/netsuite/packages/eslint-plugin-suitescript-compat
+npm install --save-dev eslint@^9 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
 ```
 
-Then use the installed package from an ESLint flat config:
+Then use the installed package from an ESLint flat config. The CommonJS example
+below should live in `eslint.config.cjs`; projects using an ESM
+`eslint.config.js` should use `import` syntax instead of `require`.
 
 ```js
 const suitescriptCompat = require("eslint-plugin-suitescript-compat");

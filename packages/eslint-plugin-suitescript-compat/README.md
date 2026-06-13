@@ -46,11 +46,13 @@ For external evaluation before a release decision, install ESLint 9 and the
 package from a local checkout or package path rather than publishing to npm:
 
 ```sh
-npm install --save-dev eslint /path/to/netsuite/packages/eslint-plugin-suitescript-compat
+npm install --save-dev eslint@^9 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
 ```
 
 From an external project, use the installed package name in an ESLint flat
-config:
+config. The CommonJS example below should live in `eslint.config.cjs`; projects
+using an ESM `eslint.config.js` should use `import` syntax instead of
+`require`.
 
 ```js
 const suitescriptCompat = require("eslint-plugin-suitescript-compat");
