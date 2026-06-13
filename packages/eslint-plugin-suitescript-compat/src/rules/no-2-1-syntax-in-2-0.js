@@ -31,7 +31,7 @@ module.exports = {
       description:
         "disallow SuiteScript 2.1 syntax in scripts annotated as 2.0 or 2.x",
       recommended: false,
-      url: "https://github.com/hannasdev/netsuite-suitescript-notes/tree/main/packages/eslint-plugin-suitescript-compat/docs/rules/no-2-1-syntax-in-2-0.md"
+      url: "https://github.com/hannasdev/eslint-plugin-suitescript-compat/tree/main/packages/eslint-plugin-suitescript-compat/docs/rules/no-2-1-syntax-in-2-0.md"
     },
     schema: [],
     messages: {

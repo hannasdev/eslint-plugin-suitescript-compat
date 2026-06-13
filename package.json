@@ -1,5 +1,5 @@
 {
-  "name": "netsuite-suitescript-notes",
+  "name": "eslint-plugin-suitescript-compat-repo",
   "private": true,
   "workspaces": [
     "packages/eslint-plugin-suitescript-compat"

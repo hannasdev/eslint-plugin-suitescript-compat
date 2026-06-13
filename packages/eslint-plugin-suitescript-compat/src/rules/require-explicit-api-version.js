@@ -26,7 +26,7 @@ module.exports = {
       description:
         "optionally require SuiteScript files to use explicit @NApiVersion values",
       recommended: false,
-      url: "https://github.com/hannasdev/netsuite-suitescript-notes/tree/main/packages/eslint-plugin-suitescript-compat/docs/rules/require-explicit-api-version.md"
+      url: "https://github.com/hannasdev/eslint-plugin-suitescript-compat/tree/main/packages/eslint-plugin-suitescript-compat/docs/rules/require-explicit-api-version.md"
     },
     schema: [
       {

@@ -6,6 +6,29 @@
   "license": "MIT",
   "type": "commonjs",
   "main": "src/index.js",
+  "files": [
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannasdev/eslint-plugin-suitescript-compat.git",
+    "directory": "packages/eslint-plugin-suitescript-compat"
+  },
+  "bugs": {
+    "url": "https://github.com/hannasdev/eslint-plugin-suitescript-compat/issues"
+  },
+  "homepage": "https://github.com/hannasdev/eslint-plugin-suitescript-compat/tree/main/packages/eslint-plugin-suitescript-compat#readme",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "netsuite",
+    "suitescript",
+    "suitescript-2.1"
+  ],
   "scripts": {
     "test": "node --test \"tests/**/*.test.js\""
   },

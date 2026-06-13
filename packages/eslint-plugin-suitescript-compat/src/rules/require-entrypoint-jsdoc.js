@@ -101,7 +101,7 @@ module.exports = {
       description:
         "require SuiteScript entry point files to declare @NApiVersion and @NScriptType",
       recommended: false,
-      url: "https://github.com/hannasdev/netsuite-suitescript-notes/tree/main/packages/eslint-plugin-suitescript-compat/docs/rules/require-entrypoint-jsdoc.md"
+      url: "https://github.com/hannasdev/eslint-plugin-suitescript-compat/tree/main/packages/eslint-plugin-suitescript-compat/docs/rules/require-entrypoint-jsdoc.md"
     },
     schema: [],
     messages: {

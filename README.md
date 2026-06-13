@@ -1,19 +1,22 @@
-# NetSuite SuiteScript Notes
+# eslint-plugin-suitescript-compat
 
-Unofficial, source-linked notes about NetSuite SuiteScript behavior, compatibility,
-and migration topics.
+Unofficial ESLint rules for source-backed NetSuite SuiteScript compatibility
+checks.
 
-This repository is intended for original summaries, practical analysis, and links
-back to Oracle NetSuite documentation. It is not affiliated with, endorsed by, or
-maintained by Oracle or NetSuite.
+This repository is centered on the
+[SuiteScript compatibility ESLint plugin](packages/eslint-plugin-suitescript-compat/README.md),
+with supporting source notes and examples for the rule behavior. It is not
+affiliated with, endorsed by, or maintained by Oracle or NetSuite.
 
-## Current notes
+## Plugin
+
+- [ESLint plugin package](packages/eslint-plugin-suitescript-compat/README.md)
+- [Adoption guide](packages/eslint-plugin-suitescript-compat/docs/adoption.md)
+- [Rule source-review guide](packages/eslint-plugin-suitescript-compat/docs/source-review.md)
+
+## Source Notes
 
 - [SuiteScript 1.0 vs 2.0 vs 2.1 in NetSuite 2026.1](docs/suitescript-versions-2026-1.md)
-
-## Tooling
-
-- [ESLint plugin for SuiteScript compatibility](packages/eslint-plugin-suitescript-compat/README.md)
 - [Completed initiative notes](docs/initiatives/done/eslint-plugin-suitescript-compat/prd.md)
 
 ## Publishing approach
