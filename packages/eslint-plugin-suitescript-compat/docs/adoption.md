@@ -11,14 +11,14 @@ metadata.
 After the preview package is published, install it from npm:
 
 ```sh
-npm install --save-dev eslint@^9 eslint-plugin-suitescript-compat@next
+npm install --save-dev eslint@^10 eslint-plugin-suitescript-compat@next
 ```
 
 Before the first npm release, evaluate the plugin from a local checkout in a
-project that also installs ESLint 9:
+project that also installs ESLint 9 or 10:
 
 ```sh
-npm install --save-dev eslint@^9 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
+npm install --save-dev eslint@^10 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
 ```
 
 Then use the installed package from an ESLint flat config. The CommonJS example

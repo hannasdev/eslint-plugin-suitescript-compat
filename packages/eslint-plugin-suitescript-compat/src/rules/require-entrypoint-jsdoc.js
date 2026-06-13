@@ -56,8 +56,16 @@ function getEntrypointGlobs(context) {
     : [];
 }
 
+function getRuleFilename(context) {
+  if (typeof context.filename === "string") {
+    return context.filename;
+  }
+
+  return typeof context.getFilename === "function" ? context.getFilename() : "";
+}
+
 function filenameMatchesEntrypointGlob(context) {
-  const filename = normalizeFilename(context.getFilename());
+  const filename = normalizeFilename(getRuleFilename(context));
 
   if (!filename || filename === "<input>") {
     return false;

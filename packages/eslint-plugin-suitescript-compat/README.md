@@ -59,10 +59,10 @@ values and script type interfaces when those tags are present.
 
 ## Quick Start
 
-Install ESLint 9 and the preview package:
+Install ESLint 9 or 10 and the preview package:
 
 ```sh
-npm install --save-dev eslint@^9 eslint-plugin-suitescript-compat@next
+npm install --save-dev eslint@^10 eslint-plugin-suitescript-compat@next
 ```
 
 In this repository, `npm install` links the workspace package for local
@@ -70,7 +70,7 @@ development. For external evaluation before the first npm release, install the
 package from a local checkout or package path:
 
 ```sh
-npm install --save-dev eslint@^9 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
+npm install --save-dev eslint@^10 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
 ```
 
 Then use the plugin from an ESLint flat config. The CommonJS example below
