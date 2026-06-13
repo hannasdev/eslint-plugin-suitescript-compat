@@ -5,10 +5,10 @@ workflow does not require a long-lived npm automation token.
 
 ## One-Time GitHub Setup
 
-The release workflow mirrors the deploy-key release pattern used in
-`mcp-writing`. When a PR is merged to `main`, `.github/workflows/release.yml`
-determines the SemVer increment from conventional commits, commits the workspace
-version bump, and pushes a matching `v*.*.*` tag.
+The release workflow uses a dedicated deploy key so GitHub Actions can push the
+version bump commit and matching `v*.*.*` tag back to the repository after a PR
+is merged to `main`. `.github/workflows/release.yml` determines the SemVer
+increment from conventional commits before creating that release commit and tag.
 
 Configure a dedicated release deploy key:
 
