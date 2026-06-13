@@ -1,9 +1,9 @@
 # eslint-plugin-suitescript-compat
 
 Unofficial ESLint rules for source-backed SuiteScript compatibility checks.
-The plugin helps SuiteScript projects catch version and entry point mistakes in
-source control before deployment, especially while evaluating or migrating
-between SuiteScript 2.0, `2.x`, and 2.1.
+The plugin helps SuiteScript projects catch version and runtime compatibility
+mistakes in source control before deployment, especially while evaluating or
+migrating between SuiteScript 2.0, `2.x`, and 2.1.
 
 This package is private while rule behavior and release posture are being
 reviewed. Package code is MIT licensed. Repository prose documentation outside
@@ -28,6 +28,34 @@ that can be seen locally:
 It is designed for source-backed repositories and CI. It does not replace
 NetSuite account validation, deployment records, script records, or Oracle
 documentation.
+
+## Relationship To `eslint-plugin-suitescript`
+
+This plugin is intended to complement the community
+[`eslint-plugin-suitescript`](https://www.npmjs.com/package/eslint-plugin-suitescript)
+package, not compete with it.
+
+Use `eslint-plugin-suitescript` for general SuiteScript linting such as:
+
+- valid `@NApiVersion` and `@NScriptType` values
+- script type entry point interfaces
+- SuiteScript module name validation
+- AMD dependency hygiene
+- `N/log` and `log.*` call conventions
+- SuiteScript 1.0 and 2.x globals
+
+Use this plugin for compatibility checks that are intentionally not covered by
+that general-purpose rule set:
+
+- requiring file-level SuiteScript tags on source-backed entry point files
+- flagging SuiteScript 2.1-only modules in scripts annotated as `2.0` or `2.x`
+- flagging conservative SuiteScript 2.0 syntax compatibility risks
+- optionally requiring explicit `2.0` or `2.1` annotations instead of `2.x`
+
+There is a small amount of tag-related overlap by design. This plugin's
+`require-entrypoint-jsdoc` rule focuses on missing source annotations for files
+that look like entry points, while `eslint-plugin-suitescript` validates tag
+values and script type interfaces when those tags are present.
 
 ## Quick Start
 

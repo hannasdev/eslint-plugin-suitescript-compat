@@ -42,6 +42,21 @@ When evaluating from this repository root, use the example config directly:
 npx eslint --config packages/eslint-plugin-suitescript-compat/examples/eslint.config.cjs packages/eslint-plugin-suitescript-compat/examples/SuiteScripts/recommended/valid-user-event.js
 ```
 
+## Pairing With General SuiteScript Linting
+
+This package is meant to extend, not replace, the community
+`eslint-plugin-suitescript` package. Use that package for general SuiteScript
+rules such as valid tag values, script type entry point interfaces, module name
+validation, AMD dependency shape, logging conventions, and SuiteScript globals.
+
+Layer this package on top when you want source-backed compatibility checks for
+SuiteScript 2.0, `2.x`, and 2.1:
+
+- missing source annotations on files that look like entry points
+- documented SuiteScript 2.1-only modules in `2.0` or `2.x` scripts
+- conservative SuiteScript 2.0 syntax compatibility risks
+- project policy that requires explicit `2.0` or `2.1` instead of `2.x`
+
 ## Preset Choice
 
 Use `recommended` first for low-noise CI checks:
