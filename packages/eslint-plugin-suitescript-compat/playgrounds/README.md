@@ -29,3 +29,28 @@ npm run lint
 Both lint commands are expected to fail because the files intentionally contain
 diagnostics. The two playgrounds use matching `SuiteScripts/` files so IDE
 diagnostics can be compared side by side.
+
+## IDE Diagnostics
+
+Install the VS Code ESLint extension, run `npm install` in each playground, and
+then open `suitescript-eslint-playgrounds.code-workspace`. The workspace opens
+both playgrounds as real project roots so the ESLint extension can resolve each
+local `package.json`, `node_modules/`, and `eslint.config.cjs`.
+
+If you open the repository root instead, VS Code may not discover the nested
+playground working directories. Add this to a local `.vscode/settings.json` and
+restart the ESLint server:
+
+```json
+{
+  "eslint.validate": ["javascript"],
+  "eslint.workingDirectories": [
+    {
+      "directory": "packages/eslint-plugin-suitescript-compat/playgrounds/compat-only"
+    },
+    {
+      "directory": "packages/eslint-plugin-suitescript-compat/playgrounds/compat-plus-suitescript"
+    }
+  ]
+}
+```

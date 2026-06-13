@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "compat-only",
+      "path": "compat-only"
+    },
+    {
+      "name": "compat-plus-suitescript",
+      "path": "compat-plus-suitescript"
+    }
+  ],
+  "settings": {
+    "eslint.validate": ["javascript"],
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto"
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint"]
+  }
+}
