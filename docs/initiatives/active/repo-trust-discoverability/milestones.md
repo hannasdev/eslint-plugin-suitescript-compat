@@ -75,6 +75,9 @@ maintenance expectations clear for a public open source repository.
 
 ### Status
 
+Acceptance Criteria checkboxes above are planning statements; milestone
+completion is tracked here and in Implementation Evidence.
+
 - [x] Planned
 - [x] Implemented
 - [x] Conformance reviewed
@@ -165,6 +168,9 @@ users, contributors, GitHub, and npm consumers.
   unless explicitly superseded.
 
 ### Status
+
+Acceptance Criteria checkboxes above are planning statements; milestone
+completion is tracked here and in Implementation Evidence.
 
 - [x] Planned
 - [x] Implemented
