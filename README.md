@@ -54,14 +54,17 @@ If the repo grows, prefer one Markdown file per topic under `docs/`.
 
 ## License
 
-Package code is licensed under the [MIT License](LICENSE). Repository prose
-documentation and source notes are licensed under the
-[Creative Commons Attribution 4.0 International License](LICENSE-CC-BY-4.0.md)
-unless a more specific file says otherwise.
-
-The package-local MIT license remains in
+Package code, tests, tooling, examples, and files inside
+[`packages/eslint-plugin-suitescript-compat/`](packages/eslint-plugin-suitescript-compat/)
+are licensed under the [MIT License](LICENSE) unless a more specific file says
+otherwise. The package-local MIT license remains in
 [`packages/eslint-plugin-suitescript-compat/LICENSE`](packages/eslint-plugin-suitescript-compat/LICENSE)
 so npm package consumers see the same code license in the published package.
+
+Repository prose documentation and source notes outside the package directory,
+including `docs/**`, are licensed under the
+[Creative Commons Attribution 4.0 International License](LICENSE-CC-BY-4.0.md)
+unless a more specific file says otherwise.
 
 Oracle, NetSuite, SuiteScript, and related product names belong to their
 respective owners.
