@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a reproducible problem with the plugin, docs, or repository setup.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Keep examples sanitized: do not include NetSuite account IDs, internal URLs, screenshots with customer data, credentials, tokens, private keys, proprietary scripts, or customer-specific implementation details.
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version or commit
+      description: Which published version or repository commit are you using?
+      placeholder: "0.2.0 or commit SHA"
+    validations:
+      required: true
+  - type: input
+    id: eslint-version
+    attributes:
+      label: ESLint version
+      placeholder: "10.0.0"
+    validations:
+      required: false
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js version
+      placeholder: "24.x"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and the result you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Sanitized reproduction
+      description: Provide a minimal sanitized config or SuiteScript snippet if useful.
+      render: js
+    validations:
+      required: false
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Relevant output
+      description: Paste sanitized lint output, stack traces, or command output.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This report does not include secrets, credentials, customer data, account IDs, internal URLs, or proprietary scripts.
+          required: true

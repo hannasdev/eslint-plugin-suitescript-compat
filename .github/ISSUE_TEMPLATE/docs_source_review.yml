@@ -1,0 +1,38 @@
+name: Documentation or source review
+description: Report a docs correction, source-link update, or wording concern.
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository favors original summaries, short factual references, and links to official Oracle NetSuite documentation. Do not paste copied documentation pages or private customer material.
+  - type: textarea
+    id: location
+    attributes:
+      label: Affected location
+      description: Link the file, section, or rule documentation that needs review.
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern or correction
+      description: What should change, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source basis
+      description: Link official docs or explain the evidence for the correction.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This report does not include copied documentation pages, secrets, customer data, account IDs, internal URLs, screenshots, or proprietary scripts.
+          required: true
