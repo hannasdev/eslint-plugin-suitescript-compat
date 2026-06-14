@@ -6,16 +6,18 @@ Oracle. The checks operate on JavaScript source files and do not read NetSuite
 accounts, deployment records, script records, credentials, or File Cabinet
 metadata.
 
-## Local Checkout Evaluation
+## Install
 
-After the preview package is published, install it from npm:
+Install the package from npm with ESLint 9 or 10:
 
 ```sh
-npm install --save-dev eslint@^10 eslint-plugin-suitescript-compat@next
+npm install --save-dev eslint@^10 eslint-plugin-suitescript-compat
 ```
 
-Before the first npm release, evaluate the plugin from a local checkout in a
-project that also installs ESLint 9 or 10:
+For projects staying on ESLint 9, use `eslint@^9` in the install command.
+
+To evaluate unreleased changes from a local checkout in a project that also
+installs ESLint 9 or 10:
 
 ```sh
 npm install --save-dev eslint@^10 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
