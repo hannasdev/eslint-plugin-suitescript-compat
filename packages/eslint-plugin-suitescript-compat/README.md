@@ -5,10 +5,11 @@ The plugin helps SuiteScript projects catch version and runtime compatibility
 mistakes in source control before deployment, especially while evaluating or
 migrating between SuiteScript 2.0, `2.x`, and 2.1.
 
-This package is prepared for a public npm preview release. Package code is MIT
-licensed. Repository prose documentation outside this package remains under the
-repository's root CC BY 4.0 license unless a future release decision changes
-that boundary.
+This package is prepared for a public npm preview release. Files in this package
+directory are MIT licensed unless a more specific file says otherwise.
+Repository prose documentation and source notes outside this package, including
+root `docs/**`, remain under the repository's
+`LICENSE-CC-BY-4.0.md` prose-docs license.
 
 Oracle, NetSuite, SuiteScript, and related names belong to their respective
 owners. This package is not affiliated with, endorsed by, or sponsored by
@@ -389,6 +390,11 @@ This is unofficial community tooling for source-backed SuiteScript checks. It
 does not replace NetSuite account validation, deployment records, or Oracle
 documentation. Rule docs link to the repository source note or Oracle pages that
 support each diagnostic, and policy-only checks are labeled as project policy.
+
+Files in this package directory are MIT licensed unless a more specific file
+says otherwise. Repository prose documentation and source notes outside this
+package, including root `docs/**`, are CC BY 4.0 under the repository's
+`LICENSE-CC-BY-4.0.md` prose-docs license.
 
 ## Examples And Adoption
 

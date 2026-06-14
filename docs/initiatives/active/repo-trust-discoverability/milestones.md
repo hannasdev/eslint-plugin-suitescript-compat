@@ -75,21 +75,24 @@ maintenance expectations clear for a public open source repository.
 
 ### Status
 
+Acceptance Criteria checkboxes above are planning statements; milestone
+completion is tracked here and in Implementation Evidence.
+
 - [x] Planned
 - [x] Implemented
 - [x] Conformance reviewed
-- [ ] Adversarially reviewed
+- [x] Adversarially reviewed
 - [x] PR opened
-- [ ] Merged
+- [x] Merged
 
 ### Implementation Evidence
 
 - Added community health and security baseline files for M1.
 - YAML validation passed for Dependabot and issue template files.
-- The local shell does not have `npm` or `node` on `PATH`, and the bundled Node
-  runtime includes `node` but not `npm`. As an explicit local substitute for
-  `npm test`, the underlying repository and workspace Node test suites passed
-  with bundled Node 24.14.0:
+- The local shell does not have `npm` on `PATH`, while the bundled Node runtime
+  provides `node` but not `npm`. As an explicit local substitute for `npm test`,
+  the underlying repository and workspace Node test suites passed with bundled
+  Node 24.14.0:
   - `node --test "tests/**/*.test.mjs"`
   - `node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
 - First conformance review result: Partial due to exact `npm test` unavailability
@@ -166,12 +169,47 @@ users, contributors, GitHub, and npm consumers.
 
 ### Status
 
+Acceptance Criteria checkboxes above are planning statements; milestone
+completion is tracked here and in Implementation Evidence.
+
 - [x] Planned
-- [ ] Implemented
-- [ ] Conformance reviewed
-- [ ] Adversarially reviewed
-- [ ] PR opened
+- [x] Implemented
+- [x] Conformance reviewed
+- [x] Adversarially reviewed
+- [x] PR opened
 - [ ] Merged
+
+### Implementation Evidence
+
+- Updated the root README first-screen copy with concise package value,
+  unofficial Oracle/NetSuite posture, CI/npm/license badges, start links, and
+  release/change-note links.
+- Changed the root `LICENSE` to MIT and preserved the previous CC BY 4.0 prose
+  license text in `LICENSE-CC-BY-4.0.md`.
+- Updated README/package README license-boundary wording so package code is MIT
+  and repository prose/source notes are CC BY 4.0 unless otherwise stated.
+- Updated architecture notes to record the implemented M2 license
+  representation.
+- Added a release-log entry for the README/license credibility baseline.
+- `git diff --check` passed.
+- The local shell does not have `npm` on `PATH`, while the bundled Node runtime
+  provides `node` but not `npm`. As an explicit local substitute for `npm test`,
+  the underlying repository and workspace Node test suites passed with bundled
+  Node 24.14.0:
+  - `node --test "tests/**/*.test.mjs"`
+  - `node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
+- Metadata/license sanity checks passed with bundled Node: root `LICENSE` starts
+  with MIT, `LICENSE-CC-BY-4.0.md` starts with the CC BY 4.0 title, package
+  metadata remains `license: MIT`, package files still include package-local
+  `LICENSE`, and README/package README license references are present.
+- Exact `npm test` and
+  `npm pack --dry-run --workspace eslint-plugin-suitescript-compat` could not be
+  run locally because `npm` is unavailable in this shell. CI should run the
+  exact npm validation commands.
+- First conformance review result: Partial due to `LICENSE-CC-BY-4.0.md` being
+  untracked before staging, missing M2 implementation evidence, and unavailable
+  local `npm` validation. The implementation evidence was updated after that
+  review.
 
 ## M3: Discoverability Metadata And Repository Settings
 
