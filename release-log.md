@@ -5,6 +5,23 @@ changes. New entries are staged here before release or PR publication.
 
 ## Unreleased
 
+### 2026-06-14 - Discoverability metadata and settings verification
+
+- What changed: Expanded npm package keywords for SuiteScript, NetSuite, ESLint,
+  linting, and static-analysis search terms, and broadened the maintainer
+  checklist to record GitHub metadata and settings that need manual verification
+  or deliberate deferral.
+- Why it matters: Users can find the package more easily after the next publish,
+  and maintainers have a concrete checklist for repository topics, description,
+  homepage, branch protection, security features, and support-surface decisions.
+- Who is affected: Package consumers, contributors, and maintainers reviewing
+  repository discoverability and settings posture.
+- Action needed: Set GitHub topics and update the repository description, then
+  verify branch protection, security settings, and CodeQL decisions in
+  repository settings where the source-controlled checklist still says
+  `deferred`.
+- PR: TBD
+
 ### 2026-06-14 - README and license credibility baseline
 
 - What changed: Updated the root README first screen with CI, npm, and license
