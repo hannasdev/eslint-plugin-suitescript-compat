@@ -177,7 +177,7 @@ completion is tracked here and in Implementation Evidence.
 - [x] Conformance reviewed
 - [x] Adversarially reviewed
 - [x] PR opened
-- [ ] Merged
+- [x] Merged
 
 ### Implementation Evidence
 
