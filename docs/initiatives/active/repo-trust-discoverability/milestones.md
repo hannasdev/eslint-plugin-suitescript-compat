@@ -79,7 +79,7 @@ maintenance expectations clear for a public open source repository.
 - [x] Implemented
 - [x] Conformance reviewed
 - [ ] Adversarially reviewed
-- [ ] PR opened
+- [x] PR opened
 - [ ] Merged
 
 ### Implementation Evidence
