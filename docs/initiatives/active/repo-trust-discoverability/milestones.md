@@ -169,8 +169,8 @@ users, contributors, GitHub, and npm consumers.
 - [x] Planned
 - [x] Implemented
 - [x] Conformance reviewed
-- [ ] Adversarially reviewed
-- [ ] PR opened
+- [x] Adversarially reviewed
+- [x] PR opened
 - [ ] Merged
 
 ### Implementation Evidence

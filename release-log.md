@@ -18,7 +18,7 @@ changes. New entries are staged here before release or PR publication.
   repository licensing or release maturity.
 - Action needed: After merge, inspect GitHub's license/community profile output
   and confirm the license boundary is displayed as intended.
-- PR: TBD
+- PR: https://github.com/hannasdev/eslint-plugin-suitescript-compat/pull/10
 
 ### 2026-06-14 - Community health and security baseline
 
