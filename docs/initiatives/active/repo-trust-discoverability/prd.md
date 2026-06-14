@@ -171,6 +171,6 @@ Validation should include:
 - [x] Use GitHub private vulnerability reporting as the private security report
   path.
 - [x] Use `@hannasdev` as the default owner and CODEOWNERS reviewer.
-- [x] Prefer root MIT license detection by making the root `LICENSE` MIT,
+- [x] Prefer handling license detection in M2 by making the root `LICENSE` MIT,
   moving CC BY 4.0 prose licensing to `LICENSE-CC-BY-4.0.md`, and documenting
   that docs/prose remain CC BY unless otherwise stated.

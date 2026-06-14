@@ -90,8 +90,8 @@ maintenance expectations clear for a public open source repository.
   runtime includes `node` but not `npm`. As an explicit local substitute for
   `npm test`, the underlying repository and workspace Node test suites passed
   with bundled Node 24.14.0:
-  - `/Users/hanna/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test "tests/**/*.test.mjs"`
-  - `/Users/hanna/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
+  - `node --test "tests/**/*.test.mjs"`
+  - `node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
 - First conformance review result: Partial due to exact `npm test` unavailability
   and bookkeeping gaps; bookkeeping was updated after that review.
 
