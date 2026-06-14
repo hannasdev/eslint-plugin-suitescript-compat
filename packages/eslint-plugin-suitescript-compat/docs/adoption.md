@@ -23,6 +23,9 @@ installs ESLint 9 or 10:
 npm install --save-dev eslint@^10 /path/to/netsuite/packages/eslint-plugin-suitescript-compat
 ```
 
+Use `eslint@^9` in the local checkout command when evaluating in an ESLint 9
+project.
+
 Then use the installed package from an ESLint flat config. The CommonJS example
 below should live in `eslint.config.cjs`; projects using an ESM
 `eslint.config.js` should use `import` syntax instead of `require`.
