@@ -299,7 +299,7 @@ the M3 PR is merged.
 - [x] Implemented
 - [x] Conformance reviewed
 - [x] Adversarially reviewed
-- [ ] PR opened
+- [x] PR opened
 - [ ] Merged
 
 ### Implementation Evidence

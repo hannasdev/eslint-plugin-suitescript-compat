@@ -20,7 +20,7 @@ changes. New entries are staged here before release or PR publication.
   verify branch protection, security settings, and CodeQL decisions in
   repository settings where the source-controlled checklist still says
   `deferred`.
-- PR: TBD
+- PR: https://github.com/hannasdev/eslint-plugin-suitescript-compat/pull/11
 
 ### 2026-06-14 - README and license credibility baseline
 
