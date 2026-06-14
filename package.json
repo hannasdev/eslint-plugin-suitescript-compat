@@ -8,6 +8,6 @@
     "test": "node --test \"tests/**/*.test.mjs\" && npm test --workspaces --if-present"
   },
   "devDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   }
 }
