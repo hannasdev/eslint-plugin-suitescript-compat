@@ -177,7 +177,7 @@ completion is tracked here and in Implementation Evidence.
 - [x] Conformance reviewed
 - [x] Adversarially reviewed
 - [x] PR opened
-- [ ] Merged
+- [x] Merged
 
 ### Implementation Evidence
 
@@ -292,9 +292,48 @@ that cannot be fully represented in source files.
 
 ### Status
 
+Status: Implemented; final initiative completion intentionally deferred until
+the M3 PR is merged.
+
 - [x] Planned
-- [ ] Implemented
-- [ ] Conformance reviewed
-- [ ] Adversarially reviewed
-- [ ] PR opened
+- [x] Implemented
+- [x] Conformance reviewed
+- [x] Adversarially reviewed
+- [x] PR opened
 - [ ] Merged
+
+### Implementation Evidence
+
+- Expanded npm package keywords for SuiteScript, NetSuite, ESLint, SuiteCloud,
+  linting, and static-analysis search terms without changing package behavior.
+- Verified public repository metadata through the GitHub connector and public
+  GitHub API: the repository is public, Issues are enabled, GitHub reports the
+  MIT license, the homepage points at the repository README, and Discussions are
+  disabled.
+- Recorded GitHub topics and repository description as `no access` in the
+  maintainer checklist because the available GitHub connector exposes repository
+  reads but no repository metadata update tool, and `gh` is not available in the
+  local shell. The checklist lists the exact recommended topics and suggested
+  description for maintainer follow-up.
+- Recorded branch protection, Dependabot alerts/security updates, GitHub
+  private vulnerability reporting, secret scanning, push protection, and code
+  scanning as deferred repository-setting checks.
+- Left Discussions disabled because the maintainer has not explicitly accepted
+  a separate public support surface.
+- Added a release-log entry for discoverability metadata and settings
+  verification.
+- `git diff --check` passed.
+- Package metadata JSON and keyword sanity checks passed with bundled Node.
+- The local shell does not have `npm` on `PATH`, while the bundled Node runtime
+  provides `node` but not `npm`. As an explicit local substitute for `npm test`,
+  the underlying repository and workspace Node test suites passed with bundled
+  Node 24.14.0:
+  - `node --test "tests/**/*.test.mjs"`
+  - `node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
+- Exact `npm test` and
+  `npm pack --dry-run --workspace eslint-plugin-suitescript-compat` could not be
+  run locally because `npm` is unavailable in this shell. CI should run the
+  exact npm validation commands.
+- Final initiative lifecycle completion is intentionally deferred until the M3
+  PR is merged; keep the initiative under `docs/initiatives/active` and run
+  `initiative-completion` after merge.

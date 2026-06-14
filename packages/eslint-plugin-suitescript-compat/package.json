@@ -26,7 +26,14 @@
     "eslint-plugin",
     "netsuite",
     "suitescript",
-    "suitescript-2.1"
+    "suitecloud",
+    "oracle-netsuite",
+    "netsuite-suitescript",
+    "suitescript-2",
+    "suitescript-2.0",
+    "suitescript-2.1",
+    "static-analysis",
+    "linting"
   ],
   "scripts": {
     "test": "node --test \"tests/**/*.test.js\""
