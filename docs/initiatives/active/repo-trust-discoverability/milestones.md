@@ -89,10 +89,10 @@ completion is tracked here and in Implementation Evidence.
 
 - Added community health and security baseline files for M1.
 - YAML validation passed for Dependabot and issue template files.
-- The local shell does not have `npm` or `node` on `PATH`, and the bundled Node
-  runtime includes `node` but not `npm`. As an explicit local substitute for
-  `npm test`, the underlying repository and workspace Node test suites passed
-  with bundled Node 24.14.0:
+- The local shell does not have `npm` on `PATH`, while the bundled Node runtime
+  provides `node` but not `npm`. As an explicit local substitute for `npm test`,
+  the underlying repository and workspace Node test suites passed with bundled
+  Node 24.14.0:
   - `node --test "tests/**/*.test.mjs"`
   - `node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
 - First conformance review result: Partial due to exact `npm test` unavailability
@@ -192,10 +192,10 @@ completion is tracked here and in Implementation Evidence.
   representation.
 - Added a release-log entry for the README/license credibility baseline.
 - `git diff --check` passed.
-- The local shell does not have `npm` or `node` on `PATH`, and the bundled Node
-  runtime includes `node` but not `npm`. As an explicit local substitute for
-  `npm test`, the underlying repository and workspace Node test suites passed
-  with bundled Node 24.14.0:
+- The local shell does not have `npm` on `PATH`, while the bundled Node runtime
+  provides `node` but not `npm`. As an explicit local substitute for `npm test`,
+  the underlying repository and workspace Node test suites passed with bundled
+  Node 24.14.0:
   - `node --test "tests/**/*.test.mjs"`
   - `node --test "packages/eslint-plugin-suitescript-compat/tests/**/*.test.js"`
 - Metadata/license sanity checks passed with bundled Node: root `LICENSE` starts
