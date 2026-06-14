@@ -17,4 +17,4 @@ changes. New entries are staged here before release or PR publication.
   documentation concerns, rule requests, or sensitive security issues.
 - Action needed: Maintainers should verify GitHub private vulnerability
   reporting and the security settings checklist after merge.
-- PR: TBD
+- PR: https://github.com/hannasdev/eslint-plugin-suitescript-compat/pull/9
