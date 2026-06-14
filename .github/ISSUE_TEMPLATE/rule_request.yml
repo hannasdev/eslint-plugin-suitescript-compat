@@ -1,0 +1,47 @@
+name: Rule request
+description: Propose a new SuiteScript compatibility check or a change to an existing rule.
+title: "rule: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rule requests should be source-backed where possible. Link to official Oracle NetSuite documentation or clearly mark experience-based notes. Keep all examples synthetic and sanitized.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Compatibility problem
+      description: What mistake should the rule catch, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: source-basis
+    attributes:
+      label: Source basis
+      description: Link official docs or repository notes, or explain why the request is experience-based.
+    validations:
+      required: true
+  - type: textarea
+    id: invalid-example
+    attributes:
+      label: Invalid sanitized example
+      description: Show a minimal example that should be reported.
+      render: js
+    validations:
+      required: false
+  - type: textarea
+    id: valid-example
+    attributes:
+      label: Valid sanitized example
+      description: Show a minimal example that should not be reported.
+      render: js
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: Examples are synthetic or sanitized and do not include customer-specific NetSuite data, credentials, tokens, internal URLs, screenshots, or proprietary scripts.
+          required: true
