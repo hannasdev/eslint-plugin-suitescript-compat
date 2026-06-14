@@ -18,7 +18,8 @@ The repository currently has:
 - a root README with a concise unofficial project description
 - a contributing guide with source and privacy boundaries
 - package-local MIT licensing
-- root CC BY 4.0 prose licensing
+- root MIT license signaling for package code
+- `LICENSE-CC-BY-4.0.md` prose documentation licensing
 - CI, release, and npm publish workflows
 - source-linked rule docs and examples
 
@@ -30,8 +31,6 @@ Observed gaps from the planning review:
 - no code owners file
 - no Dependabot config
 - no GitHub topics
-- GitHub license detection reports `NOASSERTION` because the root license is not
-  machine-recognized as the package's MIT license
 - GitHub private vulnerability reporting is not yet documented as the intended
   private security channel
 - repository security settings such as branch protection, secret scanning, and
@@ -65,7 +64,7 @@ source package:
 | Preserve package-local MIT licensing unless explicitly changed | The npm package is reusable code and already declares MIT. | Apply the root CC BY license to package code. |
 | Use GitHub private vulnerability reporting for sensitive security reports | It gives reporters a private GitHub-native path without publishing a maintainer email address or encouraging sensitive public issues. | Public issues only, maintainer email address. |
 | Use `@hannasdev` as the initial CODEOWNERS reviewer | The repository is currently maintained by a single owner, so CODEOWNERS should route review to that owner explicitly. | Leave CODEOWNERS out until more maintainers exist. |
-| Target MIT in the root `LICENSE` during M2 and move prose licensing to `LICENSE-CC-BY-4.0.md` | This would give GitHub and users a standard machine-readable license signal while preserving CC BY 4.0 for repository prose/docs. | Keep root CC BY and accept `NOASSERTION`; use a license summary with multiple license files. |
+| Put MIT in the root `LICENSE` during M2 and move prose licensing to `LICENSE-CC-BY-4.0.md` | This gives GitHub and users a standard machine-readable license signal while preserving CC BY 4.0 for repository prose/docs. | Keep root CC BY and accept `NOASSERTION`; use a license summary with multiple license files. |
 
 ## Contracts And Boundaries
 
@@ -131,7 +130,7 @@ The project currently has two intended license domains:
 - package code: MIT
 - repository prose documentation: CC BY 4.0
 
-The planned M2 source-controlled representation is:
+The M2 source-controlled representation is:
 
 - root `LICENSE`: MIT
 - `LICENSE-CC-BY-4.0.md`: Creative Commons Attribution 4.0 International
@@ -139,9 +138,7 @@ The planned M2 source-controlled representation is:
 - README/package docs: explicit boundary text explaining that package code is
   MIT and repository prose/docs are CC BY 4.0 unless otherwise stated
 
-Until M2 changes the root license layout, the root `LICENSE` remains CC BY 4.0
-and the package-local MIT license remains the package-code signal. The
-package-local MIT license should remain present unless the owner explicitly
+The package-local MIT license remains present unless the owner explicitly
 relicenses the package.
 
 ## GitHub Settings Contract

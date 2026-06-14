@@ -6,9 +6,9 @@ mistakes in source control before deployment, especially while evaluating or
 migrating between SuiteScript 2.0, `2.x`, and 2.1.
 
 This package is prepared for a public npm preview release. Package code is MIT
-licensed. Repository prose documentation outside this package remains under the
-repository's root CC BY 4.0 license unless a future release decision changes
-that boundary.
+licensed. Repository prose documentation and source notes outside package code
+remain under the repository's CC BY 4.0 prose-docs license unless a more
+specific file says otherwise.
 
 Oracle, NetSuite, SuiteScript, and related names belong to their respective
 owners. This package is not affiliated with, endorsed by, or sponsored by
@@ -389,6 +389,9 @@ This is unofficial community tooling for source-backed SuiteScript checks. It
 does not replace NetSuite account validation, deployment records, or Oracle
 documentation. Rule docs link to the repository source note or Oracle pages that
 support each diagnostic, and policy-only checks are labeled as project policy.
+
+Package code is MIT licensed. Repository prose documentation and source notes
+outside package code are CC BY 4.0 unless a more specific file says otherwise.
 
 ## Examples And Adoption
 
