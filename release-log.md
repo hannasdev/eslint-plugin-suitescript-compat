@@ -5,7 +5,7 @@ changes. New entries are staged here before release or PR publication.
 
 ## Unreleased
 
-### 2026-07-02 - SuiteScript 2.x `let` syntax diagnostic
+### 2026-07-02 - SuiteScript 2.0/2.x `let` syntax diagnostic
 
 - What changed: Updated the strict SuiteScript syntax rule to report `let`
   declarations in scripts annotated as `@NApiVersion 2.0` or `2.x` while
