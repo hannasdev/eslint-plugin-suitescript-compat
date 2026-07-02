@@ -16,7 +16,7 @@ changes. New entries are staged here before release or PR publication.
   `suitescript-compat/no-2-1-syntax-in-2-0` directly or through the `strict`
   preset.
 - Action needed: None.
-- PR: TBD
+- PR: https://github.com/hannasdev/eslint-plugin-suitescript-compat/pull/13
 
 ### 2026-06-14 - Discoverability metadata and settings verification
 
