@@ -256,8 +256,9 @@ baseline, including:
 - `let` declarations
 - object and array destructuring
 
-The rule does not report `const` declarations because SuiteScript 2.x accepts
-them even though `let` declarations can fail validation.
+The rule does not report `const` declarations because scripts annotated as
+SuiteScript 2.0 or `2.x` accept them even though `let` declarations can fail
+validation.
 
 Invalid code this rule catches:
 

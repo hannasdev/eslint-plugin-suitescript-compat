@@ -37,8 +37,9 @@ reports the following syntax forms:
 - `let` declarations
 - object and array destructuring in declarations, parameters, or assignments
 
-The rule does not report `const` declarations because SuiteScript 2.x accepts
-them even though `let` declarations can fail validation.
+The rule does not report `const` declarations because scripts annotated as
+SuiteScript 2.0 or `2.x` accept them even though `let` declarations can fail
+validation.
 
 Scripts annotated as `@NApiVersion 2.1` are not reported by this rule.
 

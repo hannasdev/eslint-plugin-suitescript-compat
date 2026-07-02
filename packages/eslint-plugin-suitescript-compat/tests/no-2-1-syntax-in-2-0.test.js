@@ -70,6 +70,20 @@ ruleTester.run("no-2-1-syntax-in-2-0", rule, {
       `
     },
     {
+      name: "allows const declarations in 2.0 scripts",
+      code: `
+        ${header20}
+        define([], function () {
+          const value = 1;
+          return {
+            beforeLoad: function () {
+              return value;
+            }
+          };
+        });
+      `
+    },
+    {
       name: "allows const declarations in 2.x scripts",
       code: `
         ${header2x}
