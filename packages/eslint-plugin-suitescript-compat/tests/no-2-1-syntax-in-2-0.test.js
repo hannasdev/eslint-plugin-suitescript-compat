@@ -70,6 +70,34 @@ ruleTester.run("no-2-1-syntax-in-2-0", rule, {
       `
     },
     {
+      name: "allows const declarations in 2.0 scripts",
+      code: `
+        ${header20}
+        define([], function () {
+          const value = 1;
+          return {
+            beforeLoad: function () {
+              return value;
+            }
+          };
+        });
+      `
+    },
+    {
+      name: "allows const declarations in 2.x scripts",
+      code: `
+        ${header2x}
+        define([], function () {
+          const value = 1;
+          return {
+            beforeLoad: function () {
+              return value;
+            }
+          };
+        });
+      `
+    },
+    {
       name: "does not report files without restricted SuiteScript api version",
       code: `
         define([], function () {
@@ -245,12 +273,12 @@ ruleTester.run("no-2-1-syntax-in-2-0", rule, {
       errors: [expected("2.0", "let declaration")]
     },
     {
-      name: "reports const declarations in 2.0 scripts",
+      name: "reports let declarations in 2.x scripts",
       code: `
-        ${header20}
-        const value = 1;
+        ${header2x}
+        let value = 1;
       `,
-      errors: [expected("2.0", "const declaration")]
+      errors: [expected("2.x", "let declaration")]
     },
     {
       name: "reports destructuring declarations in 2.x scripts",

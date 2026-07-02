@@ -34,8 +34,12 @@ reports the following syntax forms:
 - optional chaining
 - nullish coalescing
 - `for...of` statements
-- `let` and `const` declarations
+- `let` declarations
 - object and array destructuring in declarations, parameters, or assignments
+
+The rule does not report `const` declarations because scripts annotated as
+SuiteScript 2.0 or `2.x` accept them even though `let` declarations can fail
+validation.
 
 Scripts annotated as `@NApiVersion 2.1` are not reported by this rule.
 
@@ -47,7 +51,7 @@ Scripts annotated as `@NApiVersion 2.1` are not reported by this rule.
  * @NScriptType UserEventScript
  */
 define([], () => {
-  const message = `created`;
+  let message = `created`;
   return { beforeLoad: () => message };
 });
 ```
