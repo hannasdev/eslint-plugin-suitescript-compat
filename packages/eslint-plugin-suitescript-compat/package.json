@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-suitescript-compat",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Unofficial ESLint rules for source-backed SuiteScript compatibility checks.",
   "license": "MIT",
   "type": "commonjs",
