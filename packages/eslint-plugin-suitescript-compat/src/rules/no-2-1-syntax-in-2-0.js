@@ -123,7 +123,7 @@ module.exports = {
       },
 
       VariableDeclaration(node) {
-        if (node.kind === "let" || node.kind === "const") {
+        if (node.kind === "let") {
           reportSyntax(context, node, tags.apiVersion, `${node.kind} declaration`);
         }
       },

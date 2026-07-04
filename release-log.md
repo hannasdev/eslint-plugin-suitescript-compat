@@ -5,6 +5,19 @@ changes. New entries are staged here before release or PR publication.
 
 ## Unreleased
 
+### 2026-07-02 - SuiteScript 2.0/2.x `let` syntax diagnostic
+
+- What changed: Updated the strict SuiteScript syntax rule to report `let`
+  declarations in scripts annotated as `@NApiVersion 2.0` or `2.x` while
+  continuing to allow `const` declarations.
+- Why it matters: Projects can catch the `let` syntax that NetSuite rejects
+  without blocking `const` usage that works in SuiteScript 2.x scripts.
+- Who is affected: Package users who enable
+  `suitescript-compat/no-2-1-syntax-in-2-0` directly or through the `strict`
+  preset.
+- Action needed: None.
+- PR: https://github.com/hannasdev/eslint-plugin-suitescript-compat/pull/13
+
 ### 2026-06-14 - Discoverability metadata and settings verification
 
 - What changed: Expanded npm package keywords for SuiteScript, NetSuite, ESLint,
